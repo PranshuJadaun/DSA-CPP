@@ -1,0 +1,37 @@
+    C, C++
+    *Two Pointers*
+    -------> point towards variables,float,int;
+    ------->
+
+    -------------------------
+    ||||||byte|||||||||||||||
+    -------------------------
+
+    int x ==== | x |   integer take 4 byte
+               -----
+    char c ==== | c |   integer take 1 byte
+                -----
+    -------------------------
+    |||byte|byte|byte|byte|||   continuous 4 bytes for int datatype
+    -------------------------
+------------------------------------------------------------------------------   
+    ______________________
+    ## SIZE OF POINTERS ##
+    ----------------------
+        Can check by sizeof() operator;
+        by cout<<sizeof(bool);
+
+    1 bytes = 08 bits = 2^08 == 256 characters
+    4 bytes = 32 bits = 2^32 == 
+
+    ## & OPERATOR ##
+    Har byte ka ek individual address hota hai
+        ex: int x = 5;
+            cout<<&x; [This will give address]
+            
+            int x;
+            cout<<&x; [This will store garbage value and give address of it]
+
+    ## POINTER ##
+        To store address we use pointers.
+        To store use: data_type * pointer_na me;

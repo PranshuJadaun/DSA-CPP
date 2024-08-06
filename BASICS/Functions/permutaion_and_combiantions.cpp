@@ -19,7 +19,17 @@ int facto(int f){
 }
 
 int main(){
-    int n;
+    int n,r;
+    cout<<"Enter no. of item : ";
     cin>>n;
-    
+    cout<<"Enter no. of selection : ";
+    cin>>r;
+    long nr= long (facto(n-r));
+    long nfac= long (facto(n));
+    long rfac= long (facto(r));
+    cout<<endl<<"Total no. of Combination : ";
+    cout<<(nfac)/(rfac*nr);
+    cout<<endl;
+    cout<<"Total no. of Permutation : ";
+    cout<<(nfac/nr);
 }
